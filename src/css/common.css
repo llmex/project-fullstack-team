@@ -1,13 +1,13 @@
 /* Common Styles */
 
 body {
-  font-family: "Inter Tight", sans-serif;
+  font-family: 'Inter Tight', sans-serif;
   background-color: #fbfbfb;
   color: #fbfbfb;
 }
 
-.container { 
-  width: 335px; 
+.container {
+  width: 335px;
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
@@ -31,4 +31,15 @@ body {
   font-size: 48px;
   letter-spacing: -0.01em;
   text-transform: uppercase;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
 }
