@@ -8,10 +8,16 @@ body {
 }
 
 .container {
-  width: 335px;
+  min-width: 320px;
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    width: 375px;
+  }
 }
 
 .visually-hidden {
