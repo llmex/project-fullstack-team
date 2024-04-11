@@ -1,0 +1,36 @@
+.container {
+  max-width: 375px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.hero {
+  background-color: #576f35;
+}
+
+.hero-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+  margin-bottom: 20px;
+}
+
+.hero-text {
+  font-size: 14px;
+  line-height: 1.28571;
+  color: #fbfbfb;
+  margin-bottom: 20px;
+}
+
+.hero-img {
+  background-color: #576f35;
+  background-image: url(../img);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 370px;
+  width: 100%;
+}
