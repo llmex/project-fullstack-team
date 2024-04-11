@@ -69,3 +69,90 @@
 .bottom-privaty {
   align-self: flex-end;
 }
+
+.footer-privacy-box {
+  margin-right: 20px;
+}
+
+/* TABLET */
+
+@media screen and (min-width: 768px) {
+  .container {
+      width: 768px;
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+
+  .footer-slogan-box {
+      width: 265px;
+      margin-bottom: 0;
+    }
+
+  .footer-text {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+
+    .footer-description-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 100px;
+    }
+
+    .footer-address {
+      width: 215px;
+    }
+
+    .footer-address-element {
+      font-size: 18px;
+      line-height: 1.11;
+    }
+
+    .footer-anchor {
+      font-size: 32px;
+    }
+
+    .footer-list {
+      margin-bottom: 64px;
+    }
+    
+    .footer-item:not(:last-child) {
+      margin-bottom: 25px;
+    }
+
+    .footer-address {
+      margin-bottom: 0;
+    }
+
+    .footer-address-item:not(:last-child) {
+      margin-bottom: 25px;
+    }
+
+    .footer-bottom-text {
+      font-size: 18px;
+      line-height: 1.11;
+    }
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1280px) {
+    .container {
+      width: 1280px;
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+
+    .footer-description-wrap {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      margin-bottom: 100px;
+    }
+
+    .footer-naw-wrap {
+      display: flex;
+      gap: 121px;
+    }
+}
