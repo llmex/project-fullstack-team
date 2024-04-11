@@ -27,7 +27,7 @@
 
 .hero-img {
   background-color: #576f35;
-  background-image: url(../img);
+  background-image: url(../img/);
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
