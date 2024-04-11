@@ -1,0 +1,124 @@
+.works {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #576f35;
+}
+.container {
+}
+.visually-hidden {
+}
+.works-title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+  margin-bottom: 20px;
+}
+
+.text-part {
+  color: rgba(251, 251, 251, 0.3);
+}
+
+.works-title-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #fbfbfb;
+  margin-bottom: 40px;
+}
+.works-list {
+}
+.works-item {
+}
+/* .works-item-text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: rgba(20, 20, 20, 0.6);
+} */
+
+.works-list {
+  list-style: none;
+  padding: 0;
+}
+
+.works-item {
+  background-color: white;
+  border-radius: 15px;
+  padding: 15px 0 15px;
+  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.works-item:before {
+  content: counter(li);
+  counter-increment: li;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  background-color: #7a3145;
+  color: white;
+  text-align: center;
+  border-radius: 100%;
+  font-weight: bold;
+  margin-right: 24px;
+  margin-left: 24px;
+  flex-shrink: 0;
+  stroke-width: 5px;
+  /* stroke: rgba(122, 49, 69, 0.3); */
+  /* border: 5px solid rgba(122, 49, 69, 0.3); */
+  stroke: rgba(122, 49, 69, 0.3);
+  border: 5px solid rgba(122, 49, 69, 0.3);
+}
+
+.works-item:nth-child(1):before {
+  content: '1';
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+}
+.works-item:nth-child(2):before {
+  content: '2';
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+}
+.works-item:nth-child(3):before {
+  content: '3';
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+}
+
+.works-item-text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: rgba(20, 20, 20, 0.6);
+  margin: 0;
+  align-items: center;
+}
+
+.span-text-part {
+  font-weight: 700;
+  color: #141414;
+}
