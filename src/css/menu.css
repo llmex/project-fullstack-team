@@ -1,41 +1,56 @@
-.menu-mob-tab {
+.menu {
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  align-self: center;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.menu-mob-tab {
+  position: absolute;
+  top: 0;
+  width: 375px;
+
+  height: 100vh;
+  border: 1px solid #000;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25), 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background: #7a3145;
   color: #fff;
   padding: 20px 20px 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* opacity: 0;
-  visibility: hidden; */
-  pointer-events: none;
-
-  align-self: center;
 }
 
 .close-menu-btn {
   display: block;
   margin-left: auto;
   padding-right: 24px;
-  margin-bottom: 78px;
-  background: transparent;
-
+  margin-bottom: 188px;
+  background-color: transparent;
   border: none;
   padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .close-icon {
-  /* stroke-width: 3px; */
-  fill: #fbfbfb;
+  stroke-width: 3px;
+  stroke: #fbfbfb;
 }
 
 .menu-nav {
@@ -45,7 +60,7 @@
 .menu-list {
   display: flex;
   align-items: center;
-  justify-content: center;
+
   flex-direction: column;
   gap: 8px;
 }
@@ -53,28 +68,35 @@
 .menu-item {
   border: 1px solid rgba(251, 251, 251, 0.4);
   border-radius: 12px;
-  padding: 12px 0;
+  padding: 10px 0;
   text-align: center;
   justify-content: center;
   width: 115px;
   height: 42px;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-item-top {
+}
+
+.menu-item:hover {
   background-color: #fbfbfb;
+  color: #7a3145;
+}
+
+.menu-item:focus {
+  background-color: #fbfbfb;
+  color: rgba(122, 49, 69, 0.7);
 }
 
 .menu-link {
-  font-weight: 500;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
 
-  color: #fbfbfb;
-}
-
-.top-mob-link {
-  color: #7a3145;
+  /* color: #fbfbfb; */
 }
 
 .shop-btn {
@@ -91,6 +113,9 @@
   margin: 0 auto;
   background-color: transparent;
   color: #fbfbfb;
+  flex-shrink: 0;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .shop-btn:hover {
@@ -105,18 +130,17 @@
 
 @media screen and (min-width: 768px) {
   .menu {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25), 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background: rgba(20, 20, 20, 0.4);
   }
 
   .menu-mob-tab {
-    position: relative;
+    right: 0;
     width: 351px;
   }
 
   .close-icon {
+    stroke-width: 4px;
     width: 24px;
     height: 24px;
   }
@@ -144,9 +168,12 @@
     height: 52px;
     font-size: 18px;
     line-height: 1.11;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .shop-btn:focus {
-    background: #622133;
+    background: #fbfbfb;
+    color: #7a3145;
   }
 }
