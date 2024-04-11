@@ -49,7 +49,7 @@
 }
 
 .hero-image {
-    min-width: 320px;
+    width: 100%;
     min-height: 370px;
     background-image:linear-gradient(to bottom, rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)), 
     url(../img/hero/hero-mobile.jpg);
