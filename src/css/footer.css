@@ -83,6 +83,11 @@
       padding-right: 32px;
     }
 
+  .footer {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+
   .footer-slogan-box {
       width: 265px;
       margin-bottom: 0;
@@ -98,10 +103,6 @@
       flex-wrap: wrap;
       justify-content: space-between;
       margin-bottom: 100px;
-    }
-
-    .footer-address {
-      width: 215px;
     }
 
     .footer-address-element {
@@ -143,12 +144,14 @@
       padding-left: 100px;
       padding-right: 100px;
     }
+    
+    .footer {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
 
     .footer-description-wrap {
-      display: flex;
-      flex-wrap: nowrap;
-      justify-content: space-between;
-      margin-bottom: 100px;
+      margin-bottom: 125px;
     }
 
     .footer-naw-wrap {
