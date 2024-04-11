@@ -22,14 +22,20 @@
   margin-left: auto;
   padding-right: 24px;
   margin-bottom: 78px;
-  background: #fff;
+  background: transparent;
+
   border: none;
   padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+}
+
+.close-icon {
+  /* stroke-width: 3px; */
+  fill: #fbfbfb;
 }
 
 .menu-nav {
