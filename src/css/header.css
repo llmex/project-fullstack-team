@@ -1,7 +1,22 @@
 .header {
+    display: flex;
+align-items: center;
+justify-content: flex-start;
+flex-direction: row;
+gap: 135px;
 
+width: 335px;
+height: 32px;
 }
+.title{
 
+    text: #141414;
+    background: #576f35;
+    background-2: #7a3145;
+    main-text: #fbfbfb;
+    font-family: "Inter Tight", sans-serif;
+          
+}
 .nav-list {
 
 }
