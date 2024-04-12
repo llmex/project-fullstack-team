@@ -1,13 +1,21 @@
-.header {
 
-}
 
-.nav-list {
 
-}
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 135px;
+  }
 
-.nav-link {
 
+  .header {
+    background: #576f35;
+} 
+
+.logo-icon{
+    fill: #fbfbfb;
 }
 
 
