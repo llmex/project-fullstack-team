@@ -10,11 +10,11 @@ margin: 0 auto;
             background: #fbfbfb;
             
 }
-.discount-container { 
-
-min-width: 320px;
+.discount-container {
+    padding-left: 10px;
+    padding-right: 10px;
+    
 }
-
 .discount-text {
     font-weight: 600;
         font-size: 48px;
@@ -28,16 +28,16 @@ min-width: 320px;
         min-width: 320px;
         background-color: #576f35;
         color: #fbfbfb;
-        padding-right: 10px;
+        margin: 0 auto;
+        
 }
-
 .discount-second-div {
     color: #141414;
 }
 
 .dis-p {
     padding-top: 3px;
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
 @media screen and (min-width: 375px) {
