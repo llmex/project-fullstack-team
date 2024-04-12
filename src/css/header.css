@@ -1,14 +1,18 @@
 
 
 
-.header-container {
+.header-icon{
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     flex-direction: row;
-    gap: 135px;
+    
   }
-
+  .icon{
+    stroke-width: 3px;
+    stroke: #fbfbfb;
+  }
+  
 
   .header {
     background: #576f35;
@@ -16,6 +20,34 @@
 
 .logo-icon{
     fill: #fbfbfb;
+}
+
+
+
+@media screen and (min-width: 375px) {
+  .container {
+    width: 375px;
+  }
+  
+}
+
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+ }
+
+@media screen and (max-width: 1280px){
+  .main-btn{
+    display: none;
+  } 
+
+}
+@media screen and (min-width: 1280px) {
+  .icon {
+    display: none;
+  }
 }
 
 
