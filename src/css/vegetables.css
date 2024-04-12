@@ -1,0 +1,122 @@
+.veg{
+    background: #7a3145;
+    padding: 80px 20px;
+    height: auto;
+    width: auto;
+    margin: 0 auto;
+}
+.veg-wrap{
+    max-width: 335px;
+    margin: auto;
+}
+.veg-title{
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.04;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #fbfbfb;
+    margin-bottom: 20px;
+}
+.veg-title-transparent{
+    color: rgba(251, 251, 251, 0.3);
+}
+
+.veg-text{
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.29;
+    color: #fbfbfb;
+    margin-bottom: 40px;
+}
+.veg-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.veg-item{
+    border-radius: 40px;
+    padding: 32px 26px;
+    height: auto;
+    background: #fbfbfb;
+}
+.veg-title-card{
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    color: #7a3145;
+    margin-bottom: 12px;
+    
+}
+
+.veg-text-card{
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #141414;
+    margin-bottom: 14px;
+}
+
+@media screen and (min-width: 768px) {
+    .veg{
+        padding: 100px 32px;
+    }
+    .veg-wrap{
+        max-width: 704px;
+        margin: auto;
+    }
+
+    .veg-title{
+        margin-bottom: 50px;
+        width: 508px;
+        font-size: 64px;
+        line-height: 1;
+
+    }
+    .veg-text{
+        width: 626px;
+        font-size: 16px;
+        line-height: 1.25;
+        margin-bottom: 50px;
+    }
+    .veg-list{
+        gap: 0;
+        justify-content: space-between;        
+    }
+    .veg-item{
+        padding: 32px 30px;
+        width: 342px;
+        height: 379px;
+        margin-bottom: 28px;
+        
+    }
+    .veg-title-card{
+        font-style: 32px;
+    }
+    .veg-text-card{
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .veg{
+        padding: 100px;
+    }
+    .veg-wrap{
+        max-width: 1080px;
+    }
+    .veg-title{
+        margin-bottom: 25px;
+    }
+
+}
