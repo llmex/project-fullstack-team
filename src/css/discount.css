@@ -1,19 +1,18 @@
-
+.container { 
+min-width: 320px;
+padding-left: 20px;
+padding-right: 20px;
+margin: 0 auto;
+}
 .discount-section {
-        padding: 80px 10px;
-            width: 375px;
-                height: 469px;
+        padding-top:80px;
+        padding-bottom: 80px;
             background: #fbfbfb;
             
 }
-.discount-container {
-display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-    gap: 10px;
-    width: 355px;
-        height: 309px;
+.discount-container { 
+
+min-width: 320px;
 }
 
 .discount-text {
@@ -23,13 +22,31 @@ display: flex;
         letter-spacing: -0.01em;
         text-transform: uppercase;
 }
+
 .discount-first-div {
     border-radius: 12px;
-        width: 355px;
-        height: 102px;
+        min-width: 320px;
         background-color: #576f35;
         color: #fbfbfb;
+        padding-right: 10px;
 }
+
 .discount-second-div {
     color: #141414;
+}
+
+.dis-p {
+    padding-top: 3px;
+    padding-left: 20px;
+}
+
+@media screen and (min-width: 375px) {
+    .discount-container {
+        width: 375px;
+
+    }
+
+    .discount-first-div {
+        width: 355px;
+    }
 }
