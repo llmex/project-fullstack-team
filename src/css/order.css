@@ -217,8 +217,8 @@ margin-bottom: 40px;
 @media screen and (min-width: 768px) {
     .container {
         width: 768px;
-        padding-left: 0px;
-        padding-right: 0px;
+        padding-left: 32px;
+        padding-right: 32px;
        
     }
 
@@ -355,12 +355,7 @@ margin-bottom: 50px;
         padding-right: 100px;
         
     }
-                .order {
-                   
-                    padding-top: 100px;
-                    padding-bottom: 100px;
-                    max-height: 977px;
-                }
+                
         .texts {
             width: 751px;
             
