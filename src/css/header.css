@@ -1,5 +1,10 @@
 
-
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
 
 .header-icon{
     display: flex;
@@ -12,6 +17,24 @@
     stroke-width: 3px;
     stroke: #fbfbfb;
   }
+  .wrap-nav-button{
+      display: flex;
+      align-items: center; /* Вирівнює дочірні елементи по вертикалі */
+      margin-left: auto; /* Розміщує елементи вправо від логотипу та бургера */
+    }
+    .page-link {
+      display: flex; /* Горизонтальний розмір */
+      list-style: none; /* Видалення маркерів списку */
+      margin: 0; /* Видалення зовнішніх відступів */
+      padding: 0; /* Видалення внутрішніх відступів */
+    }
+    .page-link li {
+      margin-right: 20px; /* Додатковий відступ між елементами списку */
+    }
+    
+    .page-link li:last-child {
+      margin-right: 0; /* Видалення відступу праворуч для останнього елемента списку */
+    }
   
 
   .header {
@@ -42,6 +65,10 @@
   .main-btn{
     display: none;
   } 
+  .page-link{
+    font-family: "Inter Tight", sans-serif;
+    display: none;
+  }
 
 }
 @media screen and (min-width: 1280px) {
@@ -49,5 +76,25 @@
     display: none;
   }
 }
+.main-btn{
+  background: #7a3145;
+  border-radius: 30px;
+padding: 16px 32px;
+width: 157px;
+height: 52px;
+color: #fbfbfb;
 
+}
+.page-link-link{
+  display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: row;
+gap: 10px;
+border: 1px solid rgba(251, 251, 251, 0.4);
+border-radius: 12px;
+padding: 12px;
+width: 101px;
+height: 44px;
+}
 
