@@ -1,7 +1,13 @@
+.container {
+padding-left: 20px;
+padding-right: 20px;
+}
+
 .order {
-padding: 80px 20px;
+padding-top: 80px;
+padding-bottom: 80px;
 background-color: #7a3145;
-    max-height: 1519px;
+    
 }
 
 .ordering-form-submit-btn {
@@ -11,11 +17,11 @@ background-color: #7a3145;
         width: 100%;
         height: 50px;
         background: #576f35;
-    border: 1px solid gray;
+    
        
             font-weight: 600;
             font-size: 14px;
-            line-height: 1.28571;
+            line-height: 1.29;
             letter-spacing: -0.01em;
             text-transform: uppercase;
             color: #fbfbfb;
@@ -62,7 +68,7 @@ background-color: #7a3145;
    
         font-weight: 600;
         font-size: 24px;
-        line-height: 1.08333;
+        line-height: 1.08;
         letter-spacing: -0.01em;
         text-transform: uppercase;
         color: #141414;
@@ -80,7 +86,7 @@ background-color: #7a3145;
 .ordering-form-input::placeholder {
     
         font-size: 14px;
-        line-height: 1.28571;
+        line-height: 1.29;
         letter-spacing: -0.02em;
         color: #141414;
 }
@@ -125,16 +131,16 @@ border-color: brown;
 .ordering-form-message::placeholder {
 
     font-size: 14px;
-    line-height: 1.28571;
+    line-height: 1.29;
     letter-spacing: -0.02em;
     color: #141414;
 }
 
 .order-title {
-font-family: "Inter Tight", sans-serif;
+
     font-weight: 600;
     font-size: 48px;
-    line-height: 1.04167;
+    line-height: 1.04;
     letter-spacing: -0.01em;
     text-transform: uppercase;
     color: #fbfbfb;
@@ -145,11 +151,15 @@ font-family: "Inter Tight", sans-serif;
     color: rgba(251, 251, 251, 0.3);
 }
 
+.texts {
+margin-bottom: 40px;
+}
+
 .order-text {
 
         font-size: 14px;
-        line-height: 1.28571;
-    margin-bottom: 40px;
+        line-height: 1.29;
+    
 }
 
 .form-and-social {
@@ -162,7 +172,6 @@ font-family: "Inter Tight", sans-serif;
     border-radius: 30px;
         padding: 40px 20px;
         width: 100%;
-        height: 465px;
         background: #576f35;
 }
 
@@ -175,7 +184,7 @@ font-family: "Inter Tight", sans-serif;
 .order-social-text {
         font-weight: 600;
         font-size: 14px;
-        line-height: 1.28571;
+        line-height: 1.29;
         letter-spacing: -0.01em;
         color: rgba(251, 251, 251, 0.5);
     margin-bottom: 14px;
@@ -192,7 +201,7 @@ font-family: "Inter Tight", sans-serif;
     
         font-weight: 600;
         font-size: 24px;
-        line-height: 1.08333;
+        line-height: 1.08;
         letter-spacing: -0.01em;
       
 }
@@ -200,7 +209,7 @@ font-family: "Inter Tight", sans-serif;
 .order-social-list-text {
     font-weight: 600;
         font-size: 24px;
-        line-height: 1.08333;
+        line-height: 1.08;
         letter-spacing: -0.01em;
         padding-left: 8px;
 }
@@ -208,12 +217,16 @@ font-family: "Inter Tight", sans-serif;
 @media screen and (min-width: 768px) {
     .container {
         width: 768px;
+        padding-left: 0px;
+        padding-right: 0px;
        
     }
 
     .order {
-    padding: 100px 0px;
-        max-height: 1576px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+        
     }
 
 .order-title {
@@ -234,7 +247,6 @@ font-family: "Inter Tight", sans-serif;
 
 .texts {
 width: 640px;
-margin-left: 32px;
 margin-bottom: 50px;
 
 }
@@ -245,9 +257,9 @@ margin-bottom: 50px;
     margin: 0 auto;
 }
 .ordering {
-    border-radius: 30px;
+   
     padding: 50px 100px;
-    width: 100%;
+   
     height: 534px;
   
 }
@@ -263,27 +275,19 @@ margin-bottom: 50px;
 }
 
 .ordering-form-input {
-    border: 1px solid rgba(20, 20, 20, 0.2);
-    border-radius: 30px;
+   
     padding: 16px 0px 16px 16px;
-    width: 100%;
     height: 52px;
 }
 .ordering-form-message {
-    border: 1px solid rgba(20, 20, 20, 0.2);
-    border-radius: 15px;
+   
     padding: 16px 0px 59px 16px;
-    width: 100%;
     height: 95px;
 }
 .ordering-form-submit-btn {
-    display: block;
-    border-radius: 30px;
+
     padding: 16px 191px;
-    width: 100%;
     height: 52px;
-    background: #576f35;
-    border: 1px solid gray;
    
     font-size: 18px;
     line-height: 1.11;
@@ -304,9 +308,8 @@ margin-bottom: 50px;
 }
 
 .order-social {
-    border-radius: 30px;
+    
     padding: 50px;
-    width: 100%;
     height: 490px;
     
 }
@@ -326,22 +329,19 @@ margin-bottom: 50px;
 }
 
 .order-social-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+ 
     gap: 12px;
 }
 
 .order-social-list-link {
 
-    font-weight: 600;
     font-size: 32px;
     line-height: 1;
 
 }
 
 .order-social-list-text {
-font-weight: 600;
+
     font-size: 32px;
     line-height: 1;
     padding-left: 12px;
@@ -351,16 +351,19 @@ font-weight: 600;
 @media screen and (min-width: 1280px) {
     .container {
         width: 1280px;
+        padding-left: 100px;
+        padding-right: 100px;
         
     }
                 .order {
                    
-                    padding: 100px;
+                    padding-top: 100px;
+                    padding-bottom: 100px;
                     max-height: 977px;
                 }
         .texts {
             width: 751px;
-            margin-left: 0;
+            
         }
 
                 .form-and-social {
@@ -374,7 +377,7 @@ font-weight: 600;
 
 .ordering {
     
-    padding: 50px 50px;
+    padding: 50px;
     width: 529px;
     height: 534px;
 
@@ -384,6 +387,6 @@ font-weight: 600;
     
     width: 527px;
     height: 534px;
-
+padding: 50px;
 }
 }
