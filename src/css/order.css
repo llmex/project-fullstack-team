@@ -59,6 +59,7 @@
 }
 
 .ordering-form-comment {
+  resize: none;
   margin-bottom: 20px;
 }
 
