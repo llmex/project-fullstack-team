@@ -1,5 +1,5 @@
 .container {
-  max-width: 320px;
+  min-width: 320px;
   padding: 0;
   margin: 0 auto;
 }
@@ -8,21 +8,9 @@
     display: flex;
   flex-direction: column;
   gap: 40px;
-  justify-content: center;
+  align-items: center;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
 
 .hero {
     background-color: #576f35;
@@ -45,16 +33,21 @@
 }
 
 .hero-title-text {
-    margin: 0 20px;
+   padding: 100px 20px 0px 20px;
 }
 
 .hero-image {
-    width: 100%;
-    min-height: 370px;
     background-image:linear-gradient(to bottom, rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)), 
     url(../img/hero/hero-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+}
+
+.hero-image-text {
+    min-width: 320px;
+    min-height: 370px;
+    opacity: 0;
 }
 
 @media (min-resolution:192dpi) {
@@ -67,14 +60,19 @@
 @media (min-width:375px) {
 
     .container {
-       max-width: 375px;
+       width: 375px;
+    }
+
+    .hero-image-text {
+        min-width: 375px;
+        min-height: 370px;
     }
 }
 
 @media (min-width:768px) {
 
     .container {
-        max-width: 768px;
+        width: 768px;
     }
     
     .hero-title {
@@ -82,17 +80,22 @@
         margin-bottom: 25px;
     }
 
+    .hero-content {
+        gap: 50px;
+    }
+
     .hero-text {
-        font-size: 16px;
+font-size: 16px;
 line-height: 1.25;
+color: #fbfbfb;
+max-width: 603px;
     }
 
     .hero-title-text {
-        margin: 0 32px;
-    }
+   padding: 122px 32px 0px 32px;
+}
 
     .hero-image {
-        min-height: 539px;
         background-image:linear-gradient(to bottom, rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)), 
     url(../img/hero/hero-tablet.jpg);
     }
@@ -103,11 +106,16 @@ line-height: 1.25;
     url(../img/hero/hero-tablet@2x.jpg);  
         }
     }
+
+    .hero-image-text {
+    min-width: 768px;
+    min-height: 539px;
+}
 }
 
 @media (min-width: 1280px) {
     .container {
-        max-width: 1280px;
+        width: 1280px;
     }
 
     .hero-content {
@@ -116,18 +124,12 @@ line-height: 1.25;
     }
 
     .hero-title-text {
-        max-width: 502px;
-        margin-top: auto;
-        margin-left: 100px;
-        margin-bottom: 50px;
+        min-width: 502px;
+        padding: 238px 28px 50px 100px;
     }
 
     .hero-title {
         margin-bottom: 128px;
-    }
-
-    .hero-image {
-        min-height: 800px;
     }
 
     .hero-text {
@@ -144,6 +146,11 @@ line-height: 1.25;
         background-image: linear-gradient(to bottom, rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)),
         url(../img/hero/hero-desk@2x.jpg);
      }   
+    }
+
+    .hero-image-text {
+        min-width: 650px;
+        min-height: 800px;
     }
     
 }
