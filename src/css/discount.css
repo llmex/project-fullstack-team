@@ -1,11 +1,14 @@
 .container {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    
     min-width: 320px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 
 
+}
+.discount-section {
+    padding-top: 80px;
+        padding-bottom: 80px;
 }
 .discount-wrap{
 display: flex;
@@ -17,7 +20,7 @@ display: flex;
 .discount-text {
 font-weight: 600;
     font-size: 48px;
-    line-height: 1.04167;
+    line-height: 1.04;
     letter-spacing: -0.01em;
     text-transform: uppercase;
     color: #fbfbfb;
