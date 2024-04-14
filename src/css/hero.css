@@ -8,10 +8,13 @@
 .hero {
     background-color: #576f35;
     padding-top: 100px;
-    display: flex;
+}
+
+.hero-content {
+   display: flex;
   flex-direction: column;
   gap: 40px;
-  align-items: center;
+  align-items: center; 
 }
 
 .hero-title {
@@ -77,8 +80,11 @@
     }
 
     .hero {
-        gap: 50px;
         padding-top: 122px;
+    }
+
+    .hero-content {
+        gap: 50px;
     }
 
     .hero-text {
@@ -113,10 +119,15 @@ max-width: 603px;
     }
 
     .hero {
-        flex-direction: row;
-        gap: 0;
         padding-top: 0;
+    }
+
+    .hero-content {
+       flex-direction: row;
+        gap: 0;
         align-items: flex-end;
+       width: 1280px;
+       margin: 0 auto;
     }
 
 
@@ -126,7 +137,7 @@ max-width: 603px;
     }
 
     .hero-text {
-        max-width: 466px;
+        width: 466px;
         padding-bottom: 50px;
     }
 
