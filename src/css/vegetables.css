@@ -83,12 +83,11 @@
     }
     .veg-list{
         gap: 0;
-        justify-content: space-between;        
+        justify-content: space-between;  
+        row-gap: 28px;              
     }
     .veg-item{
         padding: 32px 30px;
-        margin-bottom: 28px;
-        
     }
     .veg-title-card{
         font-size: 32px;
@@ -99,8 +98,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-    .veg-title{
-        margin-bottom: 25px;
-    }
-
+    .veg-item:nth-child(1n + 1){
+        width: calc((100% - 42px) / 3);
+}
 }
