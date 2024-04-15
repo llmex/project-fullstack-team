@@ -1,77 +1,47 @@
-
-
-.header-icon{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .icon{
-    stroke-width: 3px;
-    stroke: #fbfbfb;
-    margin-left: auto;
-  }
-  .wrap-nav-button{
-      display: flex;
-      align-items: center; 
-      gap: 20px;
-    }
-    .page-link {
-      display: flex; 
-    }
-  
-  
-
-  .header {
-    background: #576f35;
-} 
-
-.logo-icon{
-    fill: #fbfbfb;
+.header-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-
-
-@media screen and (min-width: 375px) {
-  .container {
-    width: 375px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  
+.icon {
+  stroke-width: 3px;
+  stroke: #fbfbfb;
+}
+.wrap-nav-button {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.page-link {
+  display: flex;
 }
 
-
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
- }
-
-@media screen and (max-width: 1280px){
-  .main-btn{
-    display: none;
-  } 
-  .page-link{
-    display: none;
-  }
-
+.header {
+  position: absolute;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  padding-top: 20px;
+  background: transparent;
 }
-@media screen and (min-width: 1280px) {
-  .icon {
-    display: none;
-  }
+
+.header-menu-btn {
+  display: block;
+  margin-left: auto;
+}
+
+.logo-icon {
+  fill: #fbfbfb;
 }
 
 .main-btn {
-  background: #7A3145;
+  background: #7a3145;
   border-radius: 30px;
   padding: 16px;
   width: 157px;
   height: 52px;
-  color: #FBFBFB;
+  color: #fbfbfb;
   font-weight: 600;
   font-size: 18px;
   line-height: 1.11;
@@ -92,17 +62,50 @@
 }
 
 .li-works {
-width: 114px;
+  width: 114px;
 }
 .li-veg {
-width: 101px;
+  width: 101px;
 }
 .li-reviws {
-width: 81px;
+  width: 81px;
 }
 
 .page-link-list:not(:last-child) {
   margin-right: 8px;
 }
 
+@media screen and (min-width: 375px) {
+  .container {
+    width: 375px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .hero {
+    padding-top: 32px;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .main-btn {
+    display: none;
+  }
+  .page-link {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header-menu-btn {
+    display: none;
+  }
+}
