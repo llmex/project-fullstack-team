@@ -21,7 +21,7 @@
     
     <title>Green Harvest</title>
     <script type="module" crossorigin src="/project-fullstack-team/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/project-fullstack-team/assets/index-735bdfed.css">
+    <link rel="stylesheet" href="/project-fullstack-team/assets/index-38ca4dff.css">
   </head>
   <body>
     <header class="header">
@@ -145,13 +145,15 @@
 
 
       <section class="discount">
-  <div class="container">
-    <p class="discount-text">
-      <span class="discount-span">Discount up to 40%!</span> Taste the vitamins
-      and keep your health
-    </p>
-  </div>
+    <div class="container">
+        <h2 class="visually-hidden">Discount</h2>
+        <p class="discount-text">
+            <span class="discount-span">Discount up to 40%!</span> Taste the vitamins
+            and keep your health
+        </p>
+    </div>
 </section>
+
 
 
       <section class="veg" id="veg">
@@ -387,6 +389,7 @@
           <li class="order-social-list-item">
             <a
               class="order-social-list-link"
+              target="_blank"
               href="https://www.instagram.com/goitclub/"
               >instagram</a
             ><span class="order-social-list-text">/</span>
@@ -394,6 +397,7 @@
           <li class="order-social-list-item">
             <a
               class="order-social-list-link"
+              target="_blank"
               href="https://www.facebook.com/goITclub/"
               >facebook</a
             ><span class="order-social-list-text">/</span>
@@ -401,6 +405,7 @@
           <li class="order-social-list-item">
             <a
               class="order-social-list-link"
+              target="_blank"
               href="https://www.youtube.com/c/GoIT"
               >youtube</a
             >
@@ -417,9 +422,11 @@
   <div class="container">
     <div class="footer-description-wrap">
       <div class="footer-slogan-box">
-        <svg class="footer-logo-icon" width="168" height="16">
-          <use href="/project-fullstack-team/assets/icons-241f5d30.svg#icon-logo"></use>
-        </svg>
+        <a class="footer-logo-link" href="./index.html">
+          <svg class="footer-logo-icon" width="168" height="16">
+            <use href="/project-fullstack-team/assets/icons-241f5d30.svg#icon-logo"></use>
+          </svg>
+        </a>
         <p class="footer-text">
           Whether you're looking for a healthy snack or a thoughtful gift, our
           fruit baskets are the perfect choice.
@@ -438,26 +445,27 @@
           </li>
         </ul>
         <address class="footer-address">
-          <ul class="footer-address-list">
-            <li class="footer-address-item">
-              <a class="footer-address-element" href="tel:+380684439426"
-                >+380 (68) 443-84-26</a
-              >
-            </li>
-            <li class="footer-address-item">
-              <p class="footer-address-element">
-                1678 S. Pioneer Road Salt<br />Lake City UT 84104
-              </p>
-            </li>
-          </ul>
+          <a class="footer-address-element" href="tel:+380684439426"
+            >+380 (68) 443-84-26</a
+          >
+          <a
+            class="footer-address-element"
+            href="https://maps.app.goo.gl/cW2XdxWa7rBaJeZr8"
+            target="_blank"
+          >
+            1678 S. Pioneer Road Salt<br />Lake City UT 84104
+          </a>
         </address>
       </div>
     </div>
     <div class="footer-bottom">
       <div class="footer-privacy-box">
-        <a class="footer-bottom-text" href="">Privacy Policy</a
+        <a class="footer-bottom-text footer-privacy-link" href=""
+          >Privacy Policy</a
         ><span class="footer-bottom-text bottom-slash">/</span
-        ><a class="footer-bottom-text" href="">Cookie settings</a>
+        ><a class="footer-bottom-text footer-privacy-link" href=""
+          >Cookie settings</a
+        >
       </div>
       <p class="footer-bottom-text bottom-privaty">&#169;Green Harvest 2023</p>
     </div>
