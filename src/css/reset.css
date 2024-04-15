@@ -22,10 +22,16 @@ a {
 
 button {
   cursor: pointer;
+  border: none;
 }
 
 img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+input,
+textarea {
+  outline: none;
 }
