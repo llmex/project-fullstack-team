@@ -107,13 +107,13 @@
     position: relative;
     perspective: 1000px;
 }
-    .front, .back {
-        display: block;
-        transition-timing-function: cubic-bezier(.175, .885, .32, 1.275);
-        transition-duration: .5s;
-        transition-property: transform, opacity;
-        backface-visibility: hidden;
-    }
+.front, .back {
+    display: block;
+    transition-timing-function: cubic-bezier(.175, .885, .32, 1.275);
+    backface-visibility: hidden;
+    transition-duration: .5s;
+    transition-property: transform, opacity;
+}
     .front {
         transform: rotateY(0deg);
     }
