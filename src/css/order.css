@@ -34,7 +34,7 @@
   cursor: pointer;
 }
 
-.ordering-form-submit-btn:is(:hover, :focus) {
+.ordering-form-message:is(:hover, :focus) {
   border-color: brown;
 }
 
@@ -49,7 +49,7 @@
 .ordering-form-input {
   border: 1px solid rgba(20, 20, 20, 0.2);
   border-radius: 30px;
-  padding: 14px 0px 14px 16px;
+  padding: 14px 16px;
   width: 100%;
   height: 46px;
 }
@@ -65,7 +65,7 @@
 .ordering-form-message {
   border: 1px solid rgba(20, 20, 20, 0.2);
   border-radius: 15px;
-  padding: 14px 0px 59px 16px;
+  padding: 14px 16px;
   width: 100%;
   height: 91px;
   resize: none;
@@ -261,11 +261,11 @@
   }
 
   .ordering-form-input {
-    padding: 16px 0px 16px 16px;
+    padding: 16px 16px;
     height: 52px;
   }
   .ordering-form-message {
-    padding: 16px 0px 59px 16px;
+    padding: 16px 16px;
     height: 95px;
   }
   .ordering-form-submit-btn {
