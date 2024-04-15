@@ -10,10 +10,10 @@
 
 .footer-logo-icon {
   fill: #fbfbfb;
-  margin-bottom: 14px;
 }
 
 .footer-text {
+  margin-top: 14px;
   font-size: 14px;
   line-height: 1.28;
 }
@@ -33,13 +33,14 @@
   letter-spacing: -0.01em;
 }
 
+.footer-anchor:hover,
+.footer-anchor:focus {
+  color: #50c878;
+}
+
 .footer-address {
   font-style: normal;
   margin-bottom: 80px;
-}
-
-.footer-address-item:not(:last-child) {
-  margin-bottom: 14px;
 }
 
 .footer-address-element {
@@ -47,6 +48,16 @@
   font-size: 14px;
   line-height: 1.28;
   letter-spacing: -0.01em;
+  display: block;
+}
+
+.footer-address-element:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.footer-address-element:hover,
+.footer-address-element:focus {
+  color: #50c878;
 }
 
 .footer-bottom {
@@ -59,6 +70,11 @@
   line-height: 1.33;
   letter-spacing: -0.01em;
   color: rgba(251, 251, 251, 0.5);
+}
+
+.footer-privacy-link:hover,
+.footer-privacy-link:focus {
+  color: rgba(251, 251, 251, 0.25);
 }
 
 .bottom-slash {
@@ -94,6 +110,7 @@
   }
 
   .footer-text {
+    margin-top: 25px;
     font-size: 16px;
     line-height: 1.25;
   }
@@ -125,7 +142,7 @@
     margin-bottom: 0;
   }
 
-  .footer-address-item:not(:last-child) {
+  .footer-address-element:not(:last-child) {
     margin-bottom: 25px;
   }
 
