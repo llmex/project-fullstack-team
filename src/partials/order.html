@@ -1,63 +1,119 @@
 <section class="order">
-    <div class="container">
-   <div class="texts"> 
-<h2 class="order-title">Fresh <span class="order-title-red">Harvest</span> Box has got you covered</h2>
-<p class="order-text">Our boxes are packed with delicious, nutritious vegetables, perfect for anyone looking to eat healthier or support local
-farmers. Order your box today and start enjoying the best that nature has to offer!</p>
-</div>
-<div class="form-and-social">
+  <div class="container">
+    <div class="texts">
+      <h2 class="order-title">
+        Fresh <span class="order-title-red">Harvest</span> Box has got you
+        covered
+      </h2>
+      <p class="order-text">
+        Our boxes are packed with delicious, nutritious vegetables, perfect for
+        anyone looking to eat healthier or support local farmers. Order your box
+        today and start enjoying the best that nature has to offer!
+      </p>
+    </div>
+    <div class="form-and-social">
+      <div class="ordering">
+        <p class="ordering-text">
+          Ordering <span class="ordering-text-red">from us</span> is quick and
+          easy! Fill out <span class="ordering-text-green">the form</span> below
+          and we will contact you !
+        </p>
 
-<div class="ordering">
-
-<p class="ordering-text">Ordering <span class="ordering-text-red">from us</span> is quick and easy! Fill out <span class="ordering-text-green">the form</span> below and we will contact you !</p>
-
-<form class="ordering-form">
-
-
-    <div class="ordering-form-wrp">
-
-        <input type="text" class="ordering-form-input" name="user-name" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" placeholder="Full Name"
-             required />
+        <form class="ordering-form">
+          <div class="ordering-form-wrp">
+            <input
+              type="text"
+              class="ordering-form-input"
+              name="user-name"
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+              placeholder="Full Name"
+              required
+            />
             <p class="text-valid">Succes!</p>
             <p class="text-invalid">Invalid Full Name, try again</p>
-    </div>
-    <div class="ordering-form-wrp">
-    
-        <input type="email" class="ordering-form-input" name="user-email"
-            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" placeholder="Email" required />
+          </div>
+          <div class="ordering-form-wrp">
+            <input
+              type="email"
+              class="ordering-form-input"
+              name="user-email"
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+              placeholder="Email"
+              required
+            />
             <p class="text-valid">Succes!</p>
             <p class="text-invalid">Invalid email, try again</p>
+          </div>
+          <div class="ordering-form-comment">
+            <textarea
+              class="ordering-form-message"
+              name="user-comment"
+              placeholder="Comment"
+              required
+            ></textarea>
+          </div>
+
+          <button class="ordering-form-submit-btn" type="submit">Send</button>
+        </form>
+      </div>
+
+      <div class="order-social">
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./img/your-order/your-order-desk@2x.jpg 2x,
+              ./img/your-order/your-order-desk.jpg    1x
+            "
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./img/your-order/your-order-tab@2x.jpg 2x,
+              ./img/your-order/your-order-tab.jpg    1x
+            "
+          />
+          <source
+            media="(min-width: 375px)"
+            srcset="
+              ./img/your-order/your-order-mob@2x.jpg 2x,
+              ./img/your-order/your-order-mob.jpg    1x
+            "
+          />
+          <img
+            class="order-social-img"
+            src="./img/your-order/your-order-mob.jpg"
+            alt="your order"
+            width="295"
+            height="273"
+          />
+        </picture>
+        <p class="order-social-text">Follow us on our social networks:</p>
+
+        <ul class="order-social-list">
+          <li class="order-social-list-item">
+            <a
+              class="order-social-list-link"
+              href="https://www.instagram.com/goitclub/"
+              >instagram</a
+            ><span class="order-social-list-text">/</span>
+          </li>
+          <li class="order-social-list-item">
+            <a
+              class="order-social-list-link"
+              href="https://www.facebook.com/goITclub/"
+              >facebook</a
+            ><span class="order-social-list-text">/</span>
+          </li>
+          <li class="order-social-list-item">
+            <a
+              class="order-social-list-link"
+              href="https://www.youtube.com/c/GoIT"
+              >youtube</a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="ordering-form-comment">
-    
-        <textarea class="ordering-form-message" name="user-comment" placeholder="Comment" required ></textarea>
-    </div>
-
-    <button class="ordering-form-submit-btn" type="submit">Send
-       
-    </button>
-</form>
-</div>
-
-<div class="order-social">
-    <picture>
-        <source @media="(min-width: 1280px)" srcset="./img/your-order/your-order-desk.jpg 1x, ./img/your-order/your-order-desk@2x.jpg 2x" />
-        <source @media="(min-width: 768px)" srcset="./img/your-order/your-order-tab.jpg 1x, ./img/your-order/your-order-tab@2x.jpg 2x" />
-        <source @media="(min-width: 375px)" srcset="./img/your-order/your-order-mob.jpg 1x, ./img/your-order/your-order-mob@2x.jpg 2x" />
-        <img class="order-social-img" src="./img/your-order/your-order-mob.jpg" alt="your order"
-            width="295" height="273" />
-    </picture>
-    <p class="order-social-text">Follow us on our social networks:</p>
-
-   <ul class="order-social-list">
-    <li class="order-social-list-item"><a class="order-social-list-link" href="https://www.instagram.com/goitclub/">instagram</a><span class="order-social-list-text">/</span>
-    </li>
-    <li class="order-social-list-item"><a class="order-social-list-link" href="https://www.facebook.com/goITclub/">facebook</a><span class="order-social-list-text">/</span>
-    </li>
-    <li class="order-social-list-item"><a class="order-social-list-link" href="https://www.youtube.com/c/GoIT">youtube</a>
-    </li>
-   </ul>
-</div>
-</div>
-</div>
+  </div>
 </section>
