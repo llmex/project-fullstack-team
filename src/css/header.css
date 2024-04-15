@@ -24,6 +24,8 @@
 
   .header {
     background: #576f35;
+    position: fixed;
+    background: transparent;
 } 
 
 .logo-icon{
