@@ -29,7 +29,12 @@ background-color: #7a3145;
 }
 
 .ordering-form-submit-btn:is(:hover, :focus) {
-    border-color: brown;
+  background:#7A3145;
+  color: #576f35;
+}
+
+.ordering-form-message:focus {
+  border-color: brown;
 }
 
 .ordering {
@@ -204,6 +209,10 @@ margin-bottom: 40px;
         line-height: 1.08;
         letter-spacing: -0.01em;
       
+}
+
+.order-social-list-link:is(:hover, :focus) {
+  color: #7A3145;
 }
 
 .order-social-list-text {
