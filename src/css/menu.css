@@ -67,7 +67,8 @@
   stroke: rgba(122, 49, 69, 0.7);
 }
 
-.menu-nav {
+.menu-nav,
+.close-menu-btn {
   margin-bottom: 40px;
 }
 
@@ -183,6 +184,12 @@
   .shop-btn:focus {
     background: #fbfbfb;
     color: #7a3145;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .menu {
+    display: none;
   }
 }
 
