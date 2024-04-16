@@ -36,11 +36,11 @@
 }
 
 .ordering-form-submit-btn:is(:hover, :focus) {
-  background-color: #7a3145;
+  background-color: rgba(122, 49, 69, 0.9);
 }
 
 .ordering-form-message:focus {
-  border-color: brown;
+  border-color: #7a3145;
 }
 
 .ordering {
@@ -101,7 +101,7 @@
 }
 
 .ordering-form-input:focus {
-  border-color: brown;
+  border-color: #7a3145;
 }
 
 .ordering-form-input:not(:placeholder-shown):invalid {
