@@ -39,13 +39,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  min-width: 320px;
+  height: 370px;
+  margin: 0 auto;
 }
 
-.hero-image-text {
-  min-width: 320px;
-  min-height: 370px;
-  opacity: 0;
-}
 
 @media (min-resolution: 192dpi) {
   .hero-image {
@@ -63,13 +61,14 @@
     width: 375px;
   }
 
+
   .hero-title {
     font-size: 48px;
   }
 
-  .hero-image-text {
-    min-width: 375px;
-    min-height: 370px;
+  .hero-image {
+    width: 375px;
+    height: 370px;
   }
 }
 
@@ -119,9 +118,9 @@
     }
   }
 
-  .hero-image-text {
-    min-width: 768px;
-    min-height: 539px;
+  .hero-image {
+    width: 768px;
+    height: 539px;
   }
 }
 
@@ -177,7 +176,7 @@
     }
   }
 
-  .hero-image-text {
+  .hero-image {
     min-width: 650px;
     min-height: 800px;
   }
