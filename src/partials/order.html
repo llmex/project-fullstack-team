@@ -25,11 +25,11 @@
               type="text"
               class="ordering-form-input"
               name="user-name"
-              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+              pattern="[a-zA-Z\s]{2,}"
               placeholder="Full Name"
               required
             />
-            <p class="text-valid">Succes!</p>
+            <p class="text-valid">Success!</p>
             <p class="text-invalid">Invalid Full Name, try again</p>
           </div>
           <div class="ordering-form-wrp">
@@ -41,13 +41,14 @@
               placeholder="Email"
               required
             />
-            <p class="text-valid">Succes!</p>
+            <p class="text-valid">Success!</p>
             <p class="text-invalid">Invalid email, try again</p>
           </div>
           <div class="ordering-form-comment">
             <textarea
               class="ordering-form-message"
               name="user-comment"
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
               placeholder="Comment"
               required
             ></textarea>
