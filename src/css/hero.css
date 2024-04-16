@@ -1,4 +1,4 @@
-.container {
+.hero-container {
   min-width: 320px;
   padding: 0 20px;
   margin: 0 auto;
@@ -10,7 +10,7 @@
 }
 
 .hero-title-text {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .hero-title {
@@ -25,8 +25,7 @@
 
   animation-name: hero-title;
   animation-duration: 1000ms;
-  animation-timing-function: cubic-bezier(0.68,-0.55,0.265,1.55);
-
+  animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .hero-text {
@@ -37,7 +36,7 @@
 
   animation-name: hero-text;
   animation-duration: 1000ms;
-  animation-timing-function: cubic-bezier(0.68,-0.55,0.265,1.55);
+  animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .hero-image {
@@ -56,30 +55,28 @@
 }
 
 @keyframes hero-title {
-    0% {
-        right: -100vh;
-        opacity: 0;
-    }
+  0% {
+    right: -100vh;
+    opacity: 0;
+  }
 
-    100% {
-        right: 0;
-        opacity: 100%;
-    }
+  100% {
+    right: 0;
+    opacity: 100%;
+  }
 }
 
 @keyframes hero-text {
-    0% {
-        left: -100vh;
-        opacity: 0;
-    }
+  0% {
+    left: -100vh;
+    opacity: 0;
+  }
 
-    100% {
-        left: 0;
-        opacity: 100%;
-    }
-    
+  100% {
+    left: 0;
+    opacity: 100%;
+  }
 }
-
 
 @media (min-resolution: 192dpi) {
   .hero-image {
@@ -93,7 +90,7 @@
 }
 
 @media (min-width: 375px) {
-  .container {
+  .hero-container {
     width: 375px;
   }
 
@@ -108,7 +105,7 @@
 }
 
 @media (min-width: 768px) {
-  .container {
+  .hero-container {
     width: 768px;
     padding: 0 32px;
   }
@@ -124,7 +121,7 @@
 
   .hero-title-text {
     margin-bottom: 50px;
-}
+  }
 
   .hero-text {
     font-size: 16px;
@@ -160,9 +157,9 @@
 }
 
 @media (min-width: 1280px) {
-  .container {
+  .hero-container {
     width: 1280px;
-    padding: 0 0 50px 100px;
+    padding: 0 50px 50px 100px;
   }
 
   .hero {

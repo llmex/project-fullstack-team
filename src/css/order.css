@@ -5,8 +5,6 @@
   margin: 0 auto;
 }
 
-
-
 @media screen and (min-width: 375px) {
   .container {
     width: 375px;
@@ -34,11 +32,11 @@
   text-transform: uppercase;
   color: #fbfbfb;
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .ordering-form-submit-btn:is(:hover, :focus) {
-  background:#7A3145;
-  color: #576f35;
+  background-color: #7a3145;
 }
 
 .ordering-form-message:focus {
@@ -209,10 +207,11 @@
   font-size: 24px;
   line-height: 1.08;
   letter-spacing: -0.01em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .order-social-list-link:is(:hover, :focus) {
-  color: #7A3145;
+  color: #7a3145;
 }
 
 .order-social-list-text {
@@ -279,7 +278,6 @@
     height: 95px;
   }
   .ordering-form-submit-btn {
-
     padding: 16px;
 
     height: 52px;
@@ -328,7 +326,6 @@
     padding-left: 12px;
   }
 }
-
 
 @media screen and (min-width: 1280px) {
   .container {

@@ -83,7 +83,7 @@ ol {
   flex-shrink: 0;
   stroke-width: 5px;
   stroke: rgba(252, 250, 251, 0.3);
-  border: 5px solid rgba(255, 255, 255, 0.3);
+  border: 5px solid rgba(255, 255, 255, 0.6);
   position: absolute;
   left: 24px;
 }
