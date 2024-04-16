@@ -21,12 +21,23 @@
   text-transform: uppercase;
   color: #fbfbfb;
   margin-bottom: 20px;
+  position: relative;
+
+  animation-name: hero-title;
+  animation-duration: 1000ms;
+  animation-timing-function: cubic-bezier(0.68,-0.55,0.265,1.55);
+
 }
 
 .hero-text {
   font-size: 14px;
   line-height: 1.29;
   color: #fbfbfb;
+  position: relative;
+
+  animation-name: hero-text;
+  animation-duration: 1000ms;
+  animation-timing-function: cubic-bezier(0.68,-0.55,0.265,1.55);
 }
 
 .hero-image {
@@ -42,6 +53,31 @@
   min-width: 320px;
   height: 370px;
   margin: 0 auto;
+}
+
+@keyframes hero-title {
+    0% {
+        right: -100vh;
+        opacity: 0;
+    }
+
+    100% {
+        right: 0;
+        opacity: 100%;
+    }
+}
+
+@keyframes hero-text {
+    0% {
+        left: -100vh;
+        opacity: 0;
+    }
+
+    100% {
+        left: 0;
+        opacity: 100%;
+    }
+    
 }
 
 
