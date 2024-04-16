@@ -8,7 +8,6 @@
   z-index: 999;
   visibility: hidden;
   pointer-events: none;
-  /* align-self: center; */
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateX(100%)
@@ -43,7 +42,6 @@
   display: block;
   margin-left: auto;
   padding-right: 24px;
-  margin-bottom: 188px;
   background-color: transparent;
   border: none;
   padding: 0;
@@ -51,9 +49,6 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    stroke 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .close-icon {
@@ -76,14 +71,14 @@
   stroke: rgba(122, 49, 69, 0.7);
 }
 
-.menu-nav {
+.menu-nav,
+.close-menu-btn {
   margin-bottom: 40px;
 }
 
 .menu-list {
   display: flex;
   align-items: center;
-
   flex-direction: column;
   gap: 8px;
 }
@@ -101,9 +96,6 @@
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu-item-top {
-}
-
 .menu-item:hover {
   background-color: #fbfbfb;
   color: #7a3145;
@@ -118,8 +110,6 @@
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
-
-  /* color: #fbfbfb; */
 }
 
 .shop-btn {
@@ -199,4 +189,54 @@
     background: #fbfbfb;
     color: #7a3145;
   }
+}
+
+@media screen and (min-width: 1280px) {
+  .menu {
+    display: none;
+  }
+}
+
+/* Animation */
+@-webkit-keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+@keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+.hvr-pulse {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.hvr-pulse:hover,
+.hvr-pulse:focus,
+.hvr-pulse:active {
+  -webkit-animation-name: hvr-pulse;
+  animation-name: hvr-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 }
